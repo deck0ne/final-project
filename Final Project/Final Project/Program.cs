@@ -26,7 +26,8 @@ namespace Final_Project
             Console.WriteLine("                              *                                          *");
             Console.WriteLine("                              ********************************************");
         }
-       class Connect4
+        
+        class Connect4
         {
             
             private char [,] GameBoard;
@@ -48,7 +49,7 @@ namespace Final_Project
                     }
                 }
             }
-            private void BoardLayout()
+            public void BoardLayout()
             {
                 Console.Clear();
 
@@ -56,11 +57,14 @@ namespace Final_Project
                 {
                     for (int j = 0; j < 7; j++)
                     {
-                        Console.Write(" | " + GameBoard[i, j]);
+                        Console.Write("| " + GameBoard[i, j]);
                     }
-                    Console.WriteLine(" | ");
-                    Console.WriteLine("---------------");
+
+                    Console.WriteLine("| ");
+                    Console.WriteLine("----------------------");
+
                 }
+                Console.WriteLine("-1--2--3--4--5--6--7--");
             }
         }
        class Player1
@@ -69,20 +73,20 @@ namespace Final_Project
         }
         class Player2:Player1
         {
-
+            
         }
         static void Main(string[] args)
         {
-
+            
 
             Title();
             Instruction();
-            Connect4 p = new Connect4();
+            
             Console.ReadLine();
             bool PlayAgain=false;
             do
             {
-
+                Connect4 connect4 = new Connect4(); 
             } while (PlayAgain);
 
         } 
