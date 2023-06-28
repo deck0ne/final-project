@@ -247,12 +247,13 @@ namespace Final_Project
             ConnectFour PresentGame = new ConnectFour();
 
             theInstruction.smallTitle();
-            Console.Write("Please input 1st player name: ");
+            Console.WriteLine("\n \n \n \n");
+            Console.Write("        Please input 1st player name: ");
             playername = Console.ReadLine();
 
             Player1 player = new Player1(playername);
 
-            Console.Write("Please input 2nd player name: ");
+            Console.Write("        Please input 2nd player name: ");
             playername2 = Console.ReadLine();
             Player1 player2 = new Player1(playername2);
 
